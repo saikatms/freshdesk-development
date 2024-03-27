@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>A Template App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="{{{appclient}}}"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="../scripts/util.js"></script> 
+    <script defer src="../scripts/app.js"></script>
+
+  </head>
+
+  <body>
+    <div class="action-icon" id="create-voucher">
+      <img class="create-voucher-logo" style="vertical-align: middle;"/>
+      <fw-button class="button-middle" size="small"> Create Voucher </fw-button>
+    </div>
+    <br>
+    <div class="app-background">
+      <div class="add-app-content">
+        <p class="app-label text--xsmall alignment-middle">List generated voucher codes</p>
+      </div>
+      <fw-button id="list-vouchers" class="button-middle" size="small"> vouchers </fw-button>
+    </div> 
+    <div id="values"></div>
+    <br>
+    <div id="remove_history" class="hidden">
+      <fw-label
+        value="Remove History"
+        color="red">
+      </fw-label>
+    </div>
+  </body> 
+
+  <script async type="module" src="https://unpkg.com/@freshworks/crayons@3/dist/crayons/crayons.esm.js"></script>
+  <script async nomodule src="https://unpkg.com/@freshworks/crayons@3/dist/crayons/crayons.js"></script>
+</html>

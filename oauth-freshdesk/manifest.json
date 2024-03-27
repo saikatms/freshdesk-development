@@ -1,0 +1,21 @@
+{
+  "platform-version": "2.3",
+  "product": {
+    "freshdesk": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "template.html",
+          "icon": "./resources/img/icon.svg"
+        }
+      },
+      "requests" : {
+        "getIssuesFromGitHub": {},
+        "createIssuesOnGitHub": {}
+      }
+    }
+  },
+  "engines": {
+    "node": "18.0.0",
+    "fdk": "9.0.4"
+  }
+}
